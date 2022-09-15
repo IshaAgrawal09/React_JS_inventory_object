@@ -1,38 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
+  width: 80%;
+  margin: 4% auto;
+}
+.takeInputs {
+  padding: 2%;
+}
+.takeInputs input {
+  padding: 2%;
+  margin: 2% 3%;
+}
+.takeInputs button {
+  padding: 1.4% 3%;
+  cursor: pointer;
+  margin-top: 4%;
+}
+#error {
+  color: red;
+  font-weight: 500;
+  margin: 3% 0;
+}
+.showData {
+  /* border: 1px solid black; */
+}
+.showData table {
+  width: 80%;
+  margin: auto;
   text-align: center;
+  /* border: 1px solid green; */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.showData table td {
+  padding: 1% 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#delete {
+  color: red;
+  font-weight: 600;
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#quantity {
+  width: 20px;
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+  /* white-space: nowrap; */
 }
